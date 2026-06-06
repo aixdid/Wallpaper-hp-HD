@@ -2,113 +2,79 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>WallCraft – 1000+ Wallpaper HD</title>
 <style>
-:root{--bg:#080b10;--s:#0e1319;--s2:#141c25;--bd:rgba(255,255,255,0.07);--ac:#00e5ff;--ac2:#7c3aed;--tx:#e8edf5;--mu:#6b7a8d;}
-*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
-html{scroll-behavior:smooth;}
-body{font-family:-apple-system,'Segoe UI',sans-serif;background:var(--bg);color:var(--tx);overflow-x:hidden;}
-nav{position:fixed;top:0;left:0;right:0;z-index:1000;padding:0 1rem;height:56px;display:flex;align-items:center;justify-content:space-between;background:rgba(8,11,16,.95);backdrop-filter:blur(20px);border-bottom:1px solid var(--bd);}
-.logo{font-weight:900;font-size:1.35rem;letter-spacing:-.03em;}
-.logo .w{color:var(--ac);}.logo .c{color:#fff;}
-.nav-r{display:flex;gap:8px;align-items:center;}
-.nbadge{background:linear-gradient(135deg,#7c3aed,#a855f7);color:#fff;font-size:.63rem;font-weight:700;padding:4px 10px;border-radius:20px;letter-spacing:.04em;}
-.bsm{background:linear-gradient(135deg,#ff0050,#ff4d7d);color:#fff;border:none;padding:7px 14px;border-radius:8px;font-weight:700;font-size:.78rem;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:5px;}
-
-/* HERO */
-.hero{min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:5rem 1.5rem 3rem;background:radial-gradient(ellipse 100% 70% at 30% 0%,rgba(124,58,237,.18) 0%,transparent 60%),radial-gradient(ellipse 80% 60% at 80% 100%,rgba(0,229,255,.12) 0%,transparent 60%);}
-.pill{display:inline-flex;align-items:center;gap:8px;background:rgba(0,229,255,.08);border:1px solid rgba(0,229,255,.2);border-radius:100px;padding:6px 16px;font-size:.72rem;font-weight:700;color:var(--ac);letter-spacing:.08em;text-transform:uppercase;margin-bottom:1.2rem;}
-.dot{width:6px;height:6px;background:var(--ac);border-radius:50%;animation:blink 1.5s infinite;}
-@keyframes blink{0%,100%{opacity:1}50%{opacity:.3}}
-.hero h1{font-size:clamp(2.4rem,9vw,5.5rem);font-weight:900;line-height:1.0;letter-spacing:-.04em;margin-bottom:1rem;}
-.grad{background:linear-gradient(135deg,var(--ac),#7c3aed,#f59e0b);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
-.hero p{font-size:1rem;color:var(--mu);max-width:500px;line-height:1.6;margin-bottom:2rem;font-weight:300;}
-.hbtns{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;}
-.bhero{background:linear-gradient(135deg,var(--ac),#0891b2);color:#080b10;border:none;padding:13px 28px;border-radius:12px;font-weight:800;font-size:.95rem;cursor:pointer;}
-.boutline{background:transparent;color:var(--tx);border:1px solid var(--bd);padding:13px 28px;border-radius:12px;font-weight:500;font-size:.95rem;cursor:pointer;}
-.stats{display:flex;gap:2.5rem;margin-top:3rem;}
-.snum{font-size:2rem;font-weight:900;letter-spacing:-.04em;}
-.slbl{font-size:.7rem;color:var(--mu);text-transform:uppercase;letter-spacing:.08em;}
-
-/* SEARCH */
-.swrap{padding:0 1rem 1.5rem;}
-.sbox{position:relative;max-width:700px;margin:0 auto;}
-.sbox input{width:100%;background:var(--s);border:1px solid var(--bd);border-radius:12px;padding:14px 100px 14px 44px;color:var(--tx);font-size:.95rem;outline:none;transition:border .2s;}
-.sbox input:focus{border-color:rgba(0,229,255,.35);}
-.sbox input::placeholder{color:var(--mu);}
-.sico{position:absolute;left:14px;top:50%;transform:translateY(-50%);font-size:1.1rem;pointer-events:none;}
-.sbtn{position:absolute;right:6px;top:50%;transform:translateY(-50%);background:linear-gradient(135deg,var(--ac),#0891b2);color:#080b10;border:none;padding:8px 18px;border-radius:8px;font-weight:700;font-size:.8rem;cursor:pointer;}
-
-/* CATS */
-.sec{padding:0 1rem 1.5rem;max-width:1400px;margin:0 auto;}
-.sechd{display:flex;justify-content:space-between;align-items:center;margin-bottom:1rem;}
-.sectitle{font-weight:800;font-size:1.05rem;}
-.seeall{color:var(--ac);font-size:.8rem;font-weight:600;cursor:pointer;}
-.catscroll{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px;scrollbar-width:none;}
-.catscroll::-webkit-scrollbar{display:none;}
-.chip{flex-shrink:0;display:flex;align-items:center;gap:6px;background:var(--s);border:1px solid var(--bd);border-radius:100px;padding:8px 16px;cursor:pointer;font-size:.8rem;font-weight:500;color:var(--mu);white-space:nowrap;transition:all .15s;user-select:none;}
-.chip.active{background:rgba(0,229,255,.12);border-color:rgba(0,229,255,.35);color:var(--ac);}
-
-/* TOOLBAR */
-.toolbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem;flex-wrap:wrap;gap:8px;}
-.restxt{font-size:.8rem;color:var(--mu);}
-.restxt strong{color:var(--tx);}
-.srow{display:flex;gap:6px;}
-.sbut{background:var(--s);border:1px solid var(--bd);color:var(--mu);padding:6px 12px;border-radius:8px;font-size:.75rem;font-weight:600;cursor:pointer;transition:all .15s;}
-.sbut.active{border-color:rgba(0,229,255,.3);color:var(--ac);}
-
-/* GRID */
-.grid{columns:2 150px;gap:10px;}
-@media(min-width:600px){.grid{columns:3 160px;}}
-@media(min-width:900px){.grid{columns:4 180px;}}
-@media(min-width:1200px){.grid{columns:5 200px;}}
-
-/* CARD */
-.wcard{break-inside:avoid;margin-bottom:10px;border-radius:14px;overflow:hidden;position:relative;cursor:pointer;background:#111;display:block;}
-.wcard:active{transform:scale(.97);}
-.wcard canvas{width:100%;display:block;aspect-ratio:9/16;background:#111;}
-.wcard-top{position:absolute;top:8px;left:8px;right:8px;display:flex;justify-content:space-between;}
-.wcbadge{background:rgba(0,0,0,.55);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.08);font-size:.58rem;font-weight:700;padding:3px 8px;border-radius:6px;color:rgba(255,255,255,.75);}
-.wcres{background:rgba(0,0,0,.55);backdrop-filter:blur(6px);border:1px solid rgba(0,229,255,.25);font-size:.58rem;font-weight:800;padding:3px 8px;border-radius:6px;color:var(--ac);}
-.wcard-bot{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(0,0,0,.88) 0%,transparent 100%);padding:28px 10px 10px;}
-.wname{font-size:.72rem;font-weight:700;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-bottom:7px;}
-.wbtns{display:flex;gap:6px;}
-.wdl{flex:1;background:linear-gradient(135deg,var(--ac),#0891b2);color:#080b10;border:none;padding:7px 10px;border-radius:8px;font-size:.72rem;font-weight:800;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:4px;}
-.wfav{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.15);color:#fff;width:30px;height:30px;border-radius:8px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:.85rem;flex-shrink:0;}
-.wfav.on{background:rgba(239,68,68,.3);border-color:rgba(239,68,68,.5);}
-
-.loadwrap{text-align:center;padding:2rem 1rem 3rem;}
-.bload{background:var(--s);border:1px solid var(--bd);color:var(--tx);padding:13px 40px;border-radius:12px;font-size:.95rem;font-weight:700;cursor:pointer;display:inline-flex;align-items:center;gap:10px;}
-
-/* MODAL */
-.modalbg{position:fixed;inset:0;background:rgba(0,0,0,.93);z-index:2000;display:flex;align-items:flex-end;justify-content:center;opacity:0;pointer-events:none;transition:opacity .25s;backdrop-filter:blur(8px);}
-.modalbg.open{opacity:1;pointer-events:all;}
-.msheet{background:var(--s);border-radius:24px 24px 0 0;width:100%;max-width:520px;transform:translateY(100%);transition:transform .3s cubic-bezier(.34,1.56,.64,1);overflow:hidden;max-height:92svh;overflow-y:auto;}
-.modalbg.open .msheet{transform:translateY(0);}
-.mdrag{width:40px;height:4px;background:rgba(255,255,255,.15);border-radius:2px;margin:12px auto 0;}
-.mpreview{width:100%;height:240px;display:block;}
-.mbody{padding:1.2rem;}
-.mtitle{font-size:1.2rem;font-weight:800;letter-spacing:-.02em;margin-bottom:1rem;}
-.mgrid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:1.2rem;}
-.mbox{background:var(--s2);border-radius:10px;padding:10px 12px;}
-.mbox .lbl{font-size:.65rem;color:var(--mu);text-transform:uppercase;letter-spacing:.06em;margin-bottom:2px;}
-.mbox .val{font-size:.9rem;font-weight:700;}
-.rstitle{font-size:.72rem;color:var(--mu);font-weight:700;letter-spacing:.06em;text-transform:uppercase;margin-bottom:8px;}
-.rsgrid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:1.2rem;}
-.rsopt{background:var(--s2);border:1px solid var(--bd);border-radius:10px;padding:10px;text-align:center;cursor:pointer;transition:all .15s;}
-.rsopt.active{border-color:rgba(0,229,255,.4);background:rgba(0,229,255,.08);}
-.rsopt .r{font-size:.8rem;font-weight:800;}
-.rsopt .rl{font-size:.65rem;color:var(--mu);margin-top:2px;}
-.rsopt.active .r{color:var(--ac);}
-.tagsrow{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:1.2rem;}
-.tag{background:rgba(0,229,255,.07);border:1px solid rgba(0,229,255,.15);color:var(--ac);padding:4px 12px;border-radius:100px;font-size:.72rem;font-weight:500;}
-.bdl{width:100%;background:linear-gradient(135deg,var(--ac),#0891b2);color:#080b10;border:none;padding:15px;border-radius:13px;font-size:1rem;font-weight:900;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:8px;margin-bottom:8px;}
-.bclose{width:100%;background:var(--s2);border:1px solid var(--bd);color:var(--mu);padding:12px;border-radius:12px;font-size:.9rem;font-weight:600;cursor:pointer;}
-
-.toast{position:fixed;bottom:1.5rem;left:50%;transform:translateX(-50%) translateY(80px);background:#0e1319;border:1px solid rgba(0,229,255,.25);border-radius:12px;padding:12px 20px;display:flex;align-items:center;gap:10px;font-size:.875rem;font-weight:600;z-index:3000;opacity:0;transition:all .35s;white-space:nowrap;box-shadow:0 8px 32px rgba(0,0,0,.6);}
-.toast.show{transform:translateX(-50%) translateY(0);opacity:1;}
-footer{border-top:1px solid var(--bd);padding:2.5rem 1rem;text-align:center;color:var(--mu);font-size:.82rem;}
+*{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+body{font-family:-apple-system,sans-serif;background:#080b10;color:#e8edf5;overflow-x:hidden}
+nav{position:fixed;top:0;left:0;right:0;z-index:999;height:56px;display:flex;align-items:center;justify-content:space-between;padding:0 1rem;background:rgba(8,11,16,.97);border-bottom:1px solid rgba(255,255,255,.07);backdrop-filter:blur(16px)}
+.logo{font-weight:900;font-size:1.3rem;letter-spacing:-.03em}
+.logo .w{color:#00e5ff}.logo .c{color:#fff}
+.nav-r{display:flex;gap:8px;align-items:center}
+.badge{background:linear-gradient(135deg,#7c3aed,#a855f7);color:#fff;font-size:.62rem;font-weight:700;padding:4px 10px;border-radius:20px}
+.tiktok-btn{background:linear-gradient(135deg,#ff0050,#ff4d7d);color:#fff;border:none;padding:8px 14px;border-radius:8px;font-weight:700;font-size:.78rem;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:5px}
+.swrap{padding:70px 1rem 0}
+.sbox{position:relative;max-width:700px;margin:0 auto 1.2rem}
+.sbox input{width:100%;background:#0e1319;border:1px solid rgba(255,255,255,.07);border-radius:12px;padding:13px 90px 13px 42px;color:#e8edf5;font-size:.95rem;outline:none}
+.sbox input:focus{border-color:rgba(0,229,255,.35)}
+.sbox input::placeholder{color:#6b7a8d}
+.sico{position:absolute;left:13px;top:50%;transform:translateY(-50%);pointer-events:none}
+.sbtn{position:absolute;right:6px;top:50%;transform:translateY(-50%);background:linear-gradient(135deg,#00e5ff,#0891b2);color:#080b10;border:none;padding:8px 16px;border-radius:8px;font-weight:700;font-size:.8rem;cursor:pointer}
+.sec{padding:0 1rem 1rem;max-width:1400px;margin:0 auto}
+.sechd{display:flex;justify-content:space-between;align-items:center;margin-bottom:.8rem}
+.stitle{font-weight:800;font-size:1rem}
+.seeall{color:#00e5ff;font-size:.8rem;font-weight:600;cursor:pointer}
+.cats{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px;scrollbar-width:none}
+.cats::-webkit-scrollbar{display:none}
+.chip{flex-shrink:0;background:#0e1319;border:1px solid rgba(255,255,255,.07);border-radius:100px;padding:7px 14px;cursor:pointer;font-size:.78rem;font-weight:500;color:#6b7a8d;white-space:nowrap;user-select:none}
+.chip.on{background:rgba(0,229,255,.1);border-color:rgba(0,229,255,.3);color:#00e5ff}
+.toolbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem;flex-wrap:wrap;gap:8px}
+.rtxt{font-size:.78rem;color:#6b7a8d}
+.rtxt strong{color:#e8edf5}
+.sorts{display:flex;gap:6px}
+.sbut{background:#0e1319;border:1px solid rgba(255,255,255,.07);color:#6b7a8d;padding:6px 11px;border-radius:8px;font-size:.73rem;font-weight:600;cursor:pointer}
+.sbut.on{border-color:rgba(0,229,255,.3);color:#00e5ff}
+.grid{columns:2;gap:10px;column-gap:10px}
+@media(min-width:500px){.grid{columns:3}}
+@media(min-width:800px){.grid{columns:4}}
+@media(min-width:1100px){.grid{columns:5}}
+.wcard{break-inside:avoid;margin-bottom:10px;border-radius:14px;overflow:hidden;position:relative;cursor:pointer;background:#111820}
+.wcard img{width:100%;display:block;aspect-ratio:9/16;object-fit:cover}
+.wtop{position:absolute;top:8px;left:8px;right:8px;display:flex;justify-content:space-between;pointer-events:none}
+.wcat{background:rgba(0,0,0,.65);backdrop-filter:blur(6px);font-size:.58rem;font-weight:700;padding:3px 7px;border-radius:6px;color:rgba(255,255,255,.85)}
+.wres{background:rgba(0,0,0,.65);backdrop-filter:blur(6px);border:1px solid rgba(0,229,255,.3);font-size:.58rem;font-weight:800;padding:3px 7px;border-radius:6px;color:#00e5ff}
+.wbot{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(0,0,0,.92));padding:28px 9px 9px}
+.wname{font-size:.7rem;font-weight:700;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-bottom:6px}
+.wbtns{display:flex;gap:5px}
+.wdl{flex:1;background:linear-gradient(135deg,#00e5ff,#0891b2);color:#080b10;border:none;padding:7px;border-radius:7px;font-size:.7rem;font-weight:800;cursor:pointer}
+.wfav{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.15);color:#fff;width:28px;border-radius:7px;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:.82rem;flex-shrink:0;padding:0}
+.wfav.on{background:rgba(239,68,68,.3);border-color:rgba(239,68,68,.5)}
+.loadwrap{text-align:center;padding:1.5rem 1rem 3rem}
+.bload{background:#0e1319;border:1px solid rgba(255,255,255,.07);color:#e8edf5;padding:12px 36px;border-radius:12px;font-size:.9rem;font-weight:700;cursor:pointer}
+.modal-bg{position:fixed;inset:0;background:rgba(0,0,0,.92);z-index:2000;display:flex;align-items:flex-end;justify-content:center;opacity:0;pointer-events:none;transition:opacity .25s;backdrop-filter:blur(8px)}
+.modal-bg.open{opacity:1;pointer-events:all}
+.msheet{background:#0e1319;border-radius:22px 22px 0 0;width:100%;max-width:520px;transform:translateY(100%);transition:transform .3s;max-height:92svh;overflow-y:auto}
+.modal-bg.open .msheet{transform:translateY(0)}
+.mdrag{width:36px;height:4px;background:rgba(255,255,255,.12);border-radius:2px;margin:10px auto 0}
+.mprev{width:100%;height:240px;object-fit:cover;display:block;background:#111}
+.mbody{padding:1rem}
+.mtitle{font-size:1.1rem;font-weight:800;margin-bottom:.8rem}
+.mmeta{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-bottom:1rem}
+.mbox{background:#141c25;border-radius:9px;padding:9px 11px}
+.mbox .l{font-size:.6rem;color:#6b7a8d;text-transform:uppercase;letter-spacing:.05em;margin-bottom:1px}
+.mbox .v{font-size:.85rem;font-weight:700}
+.rstitle{font-size:.68rem;color:#6b7a8d;font-weight:700;letter-spacing:.05em;text-transform:uppercase;margin-bottom:7px}
+.rsgrid{display:grid;grid-template-columns:1fr 1fr;gap:7px;margin-bottom:1rem}
+.rsopt{background:#141c25;border:1px solid rgba(255,255,255,.07);border-radius:9px;padding:9px;text-align:center;cursor:pointer}
+.rsopt.on{border-color:rgba(0,229,255,.4);background:rgba(0,229,255,.07)}
+.rsopt .r{font-size:.78rem;font-weight:800}
+.rsopt .rl{font-size:.62rem;color:#6b7a8d;margin-top:1px}
+.rsopt.on .r{color:#00e5ff}
+.bdl{width:100%;background:linear-gradient(135deg,#00e5ff,#0891b2);color:#080b10;border:none;padding:14px;border-radius:12px;font-size:.95rem;font-weight:900;cursor:pointer;margin-bottom:7px}
+.bclose{width:100%;background:#141c25;border:1px solid rgba(255,255,255,.07);color:#6b7a8d;padding:11px;border-radius:11px;font-size:.88rem;font-weight:600;cursor:pointer}
+.toast{position:fixed;bottom:1.5rem;left:50%;transform:translateX(-50%) translateY(80px);background:#0e1319;border:1px solid rgba(0,229,255,.25);border-radius:11px;padding:11px 18px;font-size:.85rem;font-weight:600;z-index:3000;opacity:0;transition:all .3s;white-space:nowrap;box-shadow:0 8px 28px rgba(0,0,0,.6)}
+.toast.show{transform:translateX(-50%) translateY(0);opacity:1}
+footer{border-top:1px solid rgba(255,255,255,.06);padding:2rem 1rem;text-align:center;color:#6b7a8d;font-size:.82rem;margin-top:1rem}
 </style>
 </head>
 <body>
@@ -116,230 +82,198 @@ footer{border-top:1px solid var(--bd);padding:2.5rem 1rem;text-align:center;colo
 <nav>
   <div class="logo"><span class="w">Wall</span><span class="c">Craft</span></div>
   <div class="nav-r">
-    <span class="nbadge">1,247 WALLPAPER</span>
-    <a class="bsm" href="https://www.tiktok.com/@drtirtaclip" target="_blank" rel="noopener">
+    <span class="badge">1,247 WALLPAPER</span>
+    <a class="tiktok-btn" href="https://www.tiktok.com/@drtirtaclip" target="_blank" rel="noopener">
       <svg width="13" height="13" viewBox="0 0 24 24" fill="white"><path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.75a4.85 4.85 0 01-1.01-.06z"/></svg>
       Follow TikTok
     </a>
   </div>
 </nav>
 
-<section class="hero">
-  <div class="pill"><span class="dot"></span>Koleksi HD & 4K Premium</div>
-  <h1>Tampilan HP-mu<br><span class="grad">Level Up!</span></h1>
-  <p>1.247+ wallpaper HD & 4K gratis. Pilih, unduh, langsung pasang di HP-mu!</p>
-  <div class="hbtns">
-    <button class="bhero" onclick="document.getElementById('gallery').scrollIntoView({behavior:'smooth'})">🖼️ Jelajahi Galeri</button>
-    <button class="boutline" onclick="document.getElementById('catsec').scrollIntoView({behavior:'smooth'})">📂 Kategori</button>
-  </div>
-  <div class="stats">
-    <div><div class="snum" id="cW">0</div><div class="slbl">Wallpaper</div></div>
-    <div><div class="snum" id="cC">0</div><div class="slbl">Kategori</div></div>
-    <div><div class="snum" id="cD">0</div><div class="slbl">Diunduh</div></div>
-  </div>
-</section>
-
 <div class="swrap">
   <div class="sbox">
     <span class="sico">🔍</span>
-    <input type="search" id="sInput" placeholder="Cari: alam, galaxy, dark, neon...">
+    <input type="search" id="sInput" placeholder="Cari: alam, galaxy, neon, anime...">
     <button class="sbtn" onclick="doSearch()">Cari</button>
   </div>
 </div>
 
-<div class="sec" id="catsec">
-  <div class="sechd"><span class="sectitle">📂 Kategori</span><span class="seeall" onclick="setCat('semua')">Semua</span></div>
-  <div class="catscroll" id="catRow"></div>
+<div class="sec">
+  <div class="sechd"><span class="stitle">📂 Kategori</span><span class="seeall" onclick="setCat('semua')">Semua</span></div>
+  <div class="cats" id="catRow"></div>
 </div>
 
 <div class="sec" id="gallery">
   <div class="toolbar">
-    <div class="restxt" id="resTxt">Menampilkan <strong>0</strong> wallpaper</div>
-    <div class="srow">
-      <button class="sbut active" onclick="doSort('pop',0)">🔥 Populer</button>
-      <button class="sbut" onclick="doSort('new',1)">🆕 Baru</button>
-      <button class="sbut" onclick="doSort('hd',2)">📺 4K</button>
+    <div class="rtxt" id="rtxt">Memuat...</div>
+    <div class="sorts">
+      <button class="sbut on" onclick="doSort(0)">🔥 Populer</button>
+      <button class="sbut" onclick="doSort(1)">🆕 Baru</button>
+      <button class="sbut" onclick="doSort(2)">📺 4K</button>
     </div>
   </div>
-  <div class="grid" id="mainGrid"></div>
+  <div class="grid" id="grid"></div>
 </div>
 
 <div class="loadwrap">
-  <button class="bload" onclick="loadMore()">📦 Muat Lebih Banyak &nbsp;<span id="loadLbl"></span></button>
+  <button class="bload" onclick="loadMore()">📦 Muat Lebih Banyak</button>
 </div>
 
-<footer><p>© 2026 <strong style="color:var(--ac)">WallCraft</strong> — 1,247+ wallpaper HD gratis untuk kamu.</p></footer>
+<footer>© 2026 <strong style="color:#00e5ff">WallCraft</strong> by <a href="https://www.tiktok.com/@drtirtaclip" style="color:#ff4d7d;text-decoration:none">@drtirtaclip</a></footer>
 
-<!-- MODAL -->
-<div class="modalbg" id="modal" onclick="closeBg(event)">
+<div class="modal-bg" id="modal" onclick="closeBg(event)">
   <div class="msheet">
     <div class="mdrag"></div>
-    <canvas class="mpreview" id="mCanvas"></canvas>
+    <img class="mprev" id="mprev" src="" alt="">
     <div class="mbody">
-      <div class="mtitle" id="mTitle"></div>
-      <div class="mgrid" id="mMeta"></div>
+      <div class="mtitle" id="mtitle"></div>
+      <div class="mmeta" id="mmeta"></div>
       <div class="rstitle">Pilih Resolusi Download</div>
       <div class="rsgrid">
-        <div class="rsopt active" onclick="pickRes(this,'1080x1920')"><div class="r">1080×1920</div><div class="rl">HD</div></div>
-        <div class="rsopt" onclick="pickRes(this,'1440x2560')"><div class="r">1440×2560</div><div class="rl">Full HD</div></div>
-        <div class="rsopt" onclick="pickRes(this,'1800x3200')"><div class="r">1800×3200</div><div class="rl">QHD</div></div>
-        <div class="rsopt" onclick="pickRes(this,'2160x3840')"><div class="r">2160×3840</div><div class="rl">4K Ultra</div></div>
+        <div class="rsopt on"  onclick="pickRes(this,0)"><div class="r">720×1280</div><div class="rl">HD</div></div>
+        <div class="rsopt"     onclick="pickRes(this,1)"><div class="r">1080×1920</div><div class="rl">Full HD</div></div>
+        <div class="rsopt"     onclick="pickRes(this,2)"><div class="r">1440×2560</div><div class="rl">QHD</div></div>
+        <div class="rsopt"     onclick="pickRes(this,3)"><div class="r">2160×3840</div><div class="rl">4K Ultra</div></div>
       </div>
-      <div class="tagsrow" id="mTags"></div>
       <button class="bdl" onclick="dlCurrent()">⬇️ Unduh Gratis</button>
       <button class="bclose" onclick="closeModal()">Tutup</button>
     </div>
   </div>
 </div>
-
-<div class="toast" id="toastEl"><span id="toastMsg"></span></div>
+<div class="toast" id="toast"></div>
 
 <script>
-// ======================================================
-// WALLPAPER RENDERER — setiap wallpaper punya "scene" unik
-// menggunakan canvas 2D: shapes, patterns, stars, dll.
-// ======================================================
+// ── FOTO: URL LANGSUNG dari CDN/domain terpercaya ─────────
+// Menggunakan foto dari berbagai sumber stabil:
+// - images.pexels.com (CDN global, no CORS)
+// - cdn.pixabay.com  (CDN global, no CORS)
+// - upload.wikimedia.org (no CORS)
+// Setiap array = daftar URL foto untuk 1 kategori
 
-// Painter functions — masing-masing render scene berbeda
-const PAINTERS = {
-
-  // 🌿 ALAM - forest/mountain/water scenes
-  alam_forest: (ctx,w,h,seed) => {
-    const R = mkRand(seed);
-    // Sky gradient
-    const sky = ctx.createLinearGradient(0,0,0,h*.55);
-    sky.addColorStop(0, R()<.5?'#0a1628':'#1a0a28');
-    sky.addColorStop(1, '#2d4a1e');
-    ctx.fillStyle=sky; ctx.fillRect(0,0,w,h);
-    // Mountains
-    for(let m=0;m<4;m++){
-      ctx.beginPath();
-      const mx=w*(0.1+m*0.25+R()*.2), mh=h*(0.2+R()*.25);
-      ctx.moveTo(0,h*.6); ctx.lineTo(mx-w*.15,h*.6);
-      ctx.lineTo(mx,h*.6-mh); ctx.lineTo(mx+w*.15,h*.6);
-      ctx.lineTo(w,h*.6); ctx.closePath();
-      const mg=ctx.createLinearGradient(0,h*.6-mh,0,h*.6);
-      mg.addColorStop(0,['#c8e6c9','#e0f2f1','#b2dfdb','#dcedc8'][m%4]);
-      mg.addColorStop(1,['#388e3c','#00695c','#2e7d32','#558b2f'][m%4]);
-      ctx.fillStyle=mg; ctx.fill();
-    }
-    // Trees
-    for(let t=0;t<18;t++){
-      const tx=w*(t/18+R()*.04), ty=h*(0.55+R()*.1);
-      const th=h*(0.1+R()*.12), tw=w*.025+R()*w*.02;
-      ctx.fillStyle=['#1b5e20','#2e7d32','#388e3c'][t%3];
-      ctx.beginPath(); ctx.moveTo(tx,ty-th); ctx.lineTo(tx-tw,ty); ctx.lineTo(tx+tw,ty); ctx.closePath(); ctx.fill();
-      ctx.beginPath(); ctx.moveTo(tx,ty-th*.65); ctx.lineTo(tx-tw*1.3,ty+th*.15); ctx.lineTo(tx+tw*1.3,ty+th*.15); ctx.closePath(); ctx.fill();
-    }
-    // Water reflection
-    const wg=ctx.createLinearGradient(0,h*.7,0,h);
-    wg.addColorStop(0,'#1565c0'); wg.addColorStop(1,'#0d47a1');
-    ctx.fillStyle=wg; ctx.fillRect(0,h*.72,w,h*.28);
-    // Ripples
-    ctx.strokeStyle='rgba(255,255,255,.15)'; ctx.lineWidth=1;
-    for(let r=0;r<6;r++){
-      ctx.beginPath(); ctx.ellipse(w*.5,h*(.76+r*.04),w*(.2+r*.05),h*.008,0,0,Math.PI*2); ctx.stroke();
-    }
-    addNoise(ctx,w,h,.025);
-  },
-
-  alam_sunset_mount: (ctx,w,h,seed) => {
-    const R=mkRand(seed);
-    const g=ctx.createLinearGradient(0,0,0,h);
-    g.addColorStop(0,'#0d0020'); g.addColorStop(.4,'#7b1fa2');
-    g.addColorStop(.65,'#e91e63'); g.addColorStop(.8,'#ff6f00');
-    g.addColorStop(1,'#1a0a00');
-    ctx.fillStyle=g; ctx.fillRect(0,0,w,h);
-    // Sun
-    const sunY=h*.58;
-    const sg=ctx.createRadialGradient(w*.5,sunY,0,w*.5,sunY,w*.18);
-    sg.addColorStop(0,'rgba(255,245,0,.9)'); sg.addColorStop(.5,'rgba(255,140,0,.5)'); sg.addColorStop(1,'rgba(255,80,0,0)');
-    ctx.fillStyle=sg; ctx.beginPath(); ctx.arc(w*.5,sunY,w*.18,0,Math.PI*2); ctx.fill();
-    // Mountain silhouette
-    ctx.fillStyle='#0a0005';
-    ctx.beginPath(); ctx.moveTo(0,h);
-    const pts=[[0,.7],[.15,.5],[.3,.65],[.5,.38],[.7,.55],[.85,.45],[1,.68],[1,1]];
-    pts.forEach(([px,py])=>ctx.lineTo(w*px,h*py));
-    ctx.closePath(); ctx.fill();
-    // Stars
-    for(let i=0;i<60;i++){
-      const sx=R()*w, sy=R()*h*.4;
-      ctx.fillStyle=`rgba(255,255,255,${.3+R()*.7})`;
-      ctx.beginPath(); ctx.arc(sx,sy,R()*1.2+.3,0,Math.PI*2); ctx.fill();
-    }
-    addNoise(ctx,w,h,.02);
-  },
-
-  alam_ocean: (ctx,w,h,seed) => {
-    const R=mkRand(seed);
-    const sky=ctx.createLinearGradient(0,0,0,h*.5);
-    sky.addColorStop(0,'#0d1b2a'); sky.addColorStop(1,'#1565c0');
-    ctx.fillStyle=sky; ctx.fillRect(0,0,w,h*.5);
-    // Clouds
-    ctx.fillStyle='rgba(255,255,255,.15)';
-    for(let c=0;c<5;c++){
-      const cx=R()*w, cy=h*(.05+R()*.2), cr=w*(.05+R()*.08);
-      ctx.beginPath(); ctx.ellipse(cx,cy,cr,cr*.4,0,0,Math.PI*2); ctx.fill();
-    }
-    // Ocean
-    for(let i=0;i<8;i++){
-      const og=ctx.createLinearGradient(0,h*(.5+i*.06),0,h*(.5+(i+1)*.06));
-      og.addColorStop(0,`hsl(${210+i*3},${70-i*4}%,${30-i*2}%)`);
-      og.addColorStop(1,`hsl(${210+i*3},${68-i*4}%,${28-i*2}%)`);
-      ctx.fillStyle=og; ctx.fillRect(0,h*(.5+i*.06),w,h*.065);
-    }
-    // Waves
-    for(let w2=0;w2<10;w2++){
-      const wy=h*(.52+w2*.05);
-      ctx.beginPath(); ctx.moveTo(0,wy);
-      for(let x=0;x<=w;x+=20){
-        ctx.lineTo(x, wy+Math.sin(x/40+w2)*h*.008);
-      }
-      ctx.strokeStyle=`rgba(100,181,246,${.15+w2*.02})`; ctx.lineWidth=1.5; ctx.stroke();
-    }
-    addNoise(ctx,w,h,.02);
-  },
-
-  // 🌌 GALAXY - space scenes
-  galaxy_stars: (ctx,w,h,seed) => {
-    const R=mkRand(seed);
-    ctx.fillStyle='#000008'; ctx.fillRect(0,0,w,h);
-    // Nebula clouds
-    const cols=['rgba(124,58,237,.3)','rgba(0,229,255,.2)','rgba(233,30,99,.25)','rgba(156,39,176,.3)'];
-    for(let n=0;n<4;n++){
-      const ng=ctx.createRadialGradient(w*R(),h*R(),0,w*R(),h*R(),w*(.3+R()*.3));
-      ng.addColorStop(0,cols[n]); ng.addColorStop(1,'transparent');
-      ctx.fillStyle=ng; ctx.fillRect(0,0,w,h);
-    }
-    // Stars
-    for(let i=0;i<300;i++){
-      const sx=R()*w, sy=R()*h, sr=R()*1.5+.2;
-      const bright=R();
-      ctx.fillStyle=`rgba(255,255,255,${.3+bright*.7})`;
-      ctx.beginPath(); ctx.arc(sx,sy,sr,0,Math.PI*2); ctx.fill();
-      if(bright>.85){
-        ctx.strokeStyle=`rgba(255,255,255,${bright*.4})`;
-        ctx.lineWidth=.5;
-        ctx.beginPath(); ctx.moveTo(sx-sr*4,sy); ctx.lineTo(sx+sr*4,sy); ctx.stroke();
-        ctx.beginPath(); ctx.moveTo(sx,sy-sr*4); ctx.lineTo(sx,sy+sr*4); ctx.stroke();
-      }
-    }
-    // Milky way band
-    const mw=ctx.createLinearGradient(0,h*.2,w,h*.8);
-    mw.addColorStop(0,'transparent'); mw.addColorStop(.3,'rgba(200,180,255,.08)');
-    mw.addColorStop(.5,'rgba(200,180,255,.12)'); mw.addColorStop(.7,'rgba(200,180,255,.08)');
-    mw.addColorStop(1,'transparent');
-    ctx.fillStyle=mw; ctx.fillRect(0,0,w,h);
-  },
-
-  galaxy_nebula: (ctx,w,h,seed) => {
-    const R=mkRand(seed);
-    ctx.fillStyle='#000510'; ctx.fillRect(0,0,w,h);
-    const nebPalettes=[
-      ['rgba(233,30,99,.5)','rgba(156,39,176,.4)','rgba(63,81,181,.3)'],
-      ['rgba(0,229,255,.4)','rgba(0,150,136,.35)','rgba(33,150,243,.3)'],
-      ['rgba(255,152,0,.45)','rgba(244,67,54,.4)','rgba(233,30,99,.3)'],
-    ];
-    const pal=nebPalettes[Math.floor(R()*3)];
-    for(let l=0;l<5;l++){
-      const ng=ctx.createRadialGradi
+var PHOTOS = {
+alam:[
+"https://images.pexels.com/photos/15286/pexels-photo.jpg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/1366919/pexels-photo-1366919.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/414171/pexels-photo-414171.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/1261728/pexels-photo-1261728.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/167699/pexels-photo-167699.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/1366630/pexels-photo-1366630.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/1423600/pexels-photo-1423600.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/2387873/pexels-photo-2387873.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/210186/pexels-photo-210186.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/1287075/pexels-photo-1287075.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/572897/pexels-photo-572897.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/1671325/pexels-photo-1671325.jpeg?w=400&h=711&fit=crop"
+],
+galaxy:[
+"https://images.pexels.com/photos/956981/milky-way-starry-sky-night-sky-star-956981.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/1252890/pexels-photo-1252890.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/1169754/pexels-photo-1169754.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/2098428/pexels-photo-2098428.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/1624496/pexels-photo-1624496.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/2150/sky-space-dark-galaxy.jpg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/2034892/pexels-photo-2034892.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/1205301/pexels-photo-1205301.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/816608/pexels-photo-816608.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/1144687/pexels-photo-1144687.jpeg?w=400&h=711&fit=crop"
+],
+sunset:[
+"https://images.pexels.com/photos/36717/amazing-animal-beautiful-beautifull.jpg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/2440021/pexels-photo-2440021.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/1024960/pexels-photo-1024960.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/556416/pexels-photo-556416.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/1212693/pexels-photo-1212693.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/1194233/pexels-photo-1194233.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/325185/pexels-photo-325185.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/1320684/pexels-photo-1320684.jpeg?w=400&h=711&fit=crop"
+],
+kota:[
+"https://images.pexels.com/photos/凌晨/pexels-photo-凌晨.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/1486222/pexels-photo-1486222.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/2129796/pexels-photo-2129796.png?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/1105766/pexels-photo-1105766.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/466685/pexels-photo-466685.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/1239162/pexels-photo-1239162.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/2526935/pexels-photo-2526935.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/1004409/pexels-photo-1004409.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/1486785/pexels-photo-1486785.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/939722/pexels-photo-939722.jpeg?w=400&h=711&fit=crop"
+],
+abstrak:[
+"https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/1193743/pexels-photo-1193743.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/2693212/pexels-photo-2693212.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/1070345/pexels-photo-1070345.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/2693208/pexels-photo-2693208.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/1616403/pexels-photo-1616403.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/3109816/pexels-photo-3109816.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/2832382/pexels-photo-2832382.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/1209843/pexels-photo-1209843.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/1762851/pexels-photo-1762851.jpeg?w=400&h=711&fit=crop"
+],
+neon:[
+"https://images.pexels.com/photos/1089438/pexels-photo-1089438.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/2007647/pexels-photo-2007647.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/3052361/pexels-photo-3052361.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/2832382/pexels-photo-2832382.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/1209843/pexels-photo-1209843.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/2693212/pexels-photo-2693212.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/1762851/pexels-photo-1762851.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/3109816/pexels-photo-3109816.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/1193743/pexels-photo-1193743.jpeg?w=400&h=711&fit=crop"
+],
+bunga:[
+"https://images.pexels.com/photos/56866/garden-rose-red-pink-56866.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/931177/pexels-photo-931177.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/1477166/pexels-photo-1477166.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/67636/rose-blue-flower-rose-blooms-67636.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/1165538/pexels-photo-1165538.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/1408221/pexels-photo-1408221.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/931177/pexels-photo-931177.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/2132227/pexels-photo-2132227.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/39517/rose-flower-blossom-bloom-39517.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/1261731/pexels-photo-1261731.jpeg?w=400&h=711&fit=crop"
+],
+hewan:[
+"https://images.pexels.com/photos/145939/pexels-photo-145939.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/792381/pexels-photo-792381.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/1300929/pexels-photo-1300929.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/2295744/pexels-photo-2295744.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/1056251/pexels-photo-1056251.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/247502/pexels-photo-247502.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/162140/duckling-bird-yellow-fluffy-162140.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/39317/chihuahua-dog-puppy-cute-39317.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/2295744/pexels-photo-2295744.jpeg?w=400&h=711&fit=crop"
+],
+pantai:[
+"https://images.pexels.com/photos/1032650/pexels-photo-1032650.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/994605/pexels-photo-994605.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/1268855/pexels-photo-1268855.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/1450353/pexels-photo-1450353.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/1174732/pexels-photo-1174732.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/1642125/pexels-photo-1642125.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/954559/pexels-photo-954559.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/457882/pexels-photo-457882.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/1032650/pexels-photo-1032650.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/210137/pexels-photo-210137.jpeg?w=400&h=711&fit=crop"
+],
+gunung:[
+"https://images.pexels.com/photos/371633/pexels-photo-371633.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/1659438/pexels-photo-1659438.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/618833/pexels-photo-618833.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/1271619/pexels-photo-1271619.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/2437299/pexels-photo-2437299.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/1448055/pexels-photo-1448055.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/1366919/pexels-photo-1366919.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/733174/pexels-photo-733174.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/1583339/pexels-photo-1583339.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/2437299/pexels-photo-2437299.jpeg?w=400&h=711&fit=crop"
+],
+musim:[
+"https://images.pexels.com/photos/546228/pexels-photo-546228.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/235621/pexels-photo-235621.jpeg?w=400&h=711&fit=crop",
+"https://images.pexels.com/photos/1552212/pexels-photo-1552212.jpeg?w=400&h=711&fit=
